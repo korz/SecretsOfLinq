@@ -16,6 +16,9 @@ namespace ExpressionTrees
 
             var isTrue = isBetweenFunc(new DateTime(2014, 7, 6), rangeFromDate, rangeThruDate);
             var isFalse = isBetweenFunc(new DateTime(2015, 1, 1), rangeFromDate, rangeThruDate);
+
+            Console.WriteLine(isTrue);
+            Console.WriteLine(isFalse);
         }
 
         private static Func<DateTime, DateTime, DateTime, bool> CreateIsBetweenFunc()

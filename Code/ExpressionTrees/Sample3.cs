@@ -9,8 +9,8 @@ namespace ExpressionTrees
         {
             //Are Types Equal?
 
-            var isTrue = AreTypesEqual(5, 10);
-            var isFalse = AreTypesEqual(5, 5m);
+            Console.WriteLine(AreTypesEqual(5, 10));
+            Console.WriteLine(AreTypesEqual(5, 5m));
         }
 
         private static bool AreTypesEqual<T1, T2>(T1 a, T2 b)

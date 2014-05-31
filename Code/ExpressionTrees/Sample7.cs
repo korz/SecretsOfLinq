@@ -16,11 +16,12 @@ namespace ExpressionTrees
                     { "Name", "Spencer Group"}
                 };
 
-            IList<Func<Customer, bool>> list = CreateEqualExpressions<Customer>(dictionary).ToList();
-            
-            foreach (var item in list)
+            IList<Func<Customer, bool>> funcs = CreateEqualExpressions<Customer>(dictionary).ToList();
+
+            //var collection = somecollection;
+            foreach (var func in funcs)
             {
-                
+                //collection.Where(func);
             }
         }
 
