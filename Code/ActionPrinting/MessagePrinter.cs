@@ -2,7 +2,7 @@
 
 namespace ActionPrinting
 {
-    public static class MessagePrinter
+    internal static class MessagePrinter
     {
         public static void PrintMessage(params string[] text)
         {

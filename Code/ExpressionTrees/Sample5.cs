@@ -19,10 +19,12 @@ namespace ExpressionTrees
 
             Console.WriteLine(isTrue);
             Console.WriteLine(isFalse);
+            Console.ReadLine();
         }
 
         private static Func<DateTime, DateTime, DateTime, bool> CreateIsBetweenFunc()
         {
+            //      (date, from, thru) => (date >= from) && (date <= thru) 
             var dateParameter = Expression.Parameter(typeof(DateTime), "date");
             var fromDateParameter = Expression.Parameter(typeof(DateTime), "fromDate");
             var thruDateParameter = Expression.Parameter(typeof(DateTime), "thruDate");

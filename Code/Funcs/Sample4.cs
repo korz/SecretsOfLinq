@@ -1,4 +1,5 @@
 ﻿using System;
+using ObjectsAsTrees.Data;
 
 namespace Funcs
 {
@@ -6,7 +7,11 @@ namespace Funcs
     {
         public static void Sample4()
         {
-            Func<dynamic> personFunc = () => new { FirstName = "Brian", LastName = "Korzynski" }; //Anonymous Type
+            Func<dynamic> personFunc = () => new
+                {
+                    FirstName = "Brian", 
+                    LastName = "Korzynski"
+                }; //Anonymous Type
 
             var person = personFunc();
 

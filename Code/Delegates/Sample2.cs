@@ -4,11 +4,11 @@ namespace Delegates
 {
     public static partial class Samples
     {
-        private delegate int Tramsformer(int x);
+        private delegate int Transformer(int x);
 
         public static void Sample2()
         {
-            Tramsformer squarer = Squared;
+            Transformer squarer = Squared;
 
             int[] values = { 1, 2, 3 };
 
@@ -18,11 +18,11 @@ namespace Delegates
             Console.ReadLine();
         }
 
-        static int[] Processor(int[] values, Tramsformer tramsformer)
+        static int[] Processor(int[] values, Transformer transformer)
         {
             for (var i = 0; i < values.Length; i++)
             {
-                values[i] = tramsformer(values[i]);
+                values[i] = transformer(values[i]);
             }
 
             return values;

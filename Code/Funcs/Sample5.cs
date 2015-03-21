@@ -8,9 +8,13 @@ namespace Funcs
         public static void Sample5()
         {
             Func<Customer> getCustomerFunc = GetCustomerFromDatabase;
-            Func<Customer, dynamic> customerFunc = x => new { CustomerName = x.Name, CustomerAddress = x.Address };
+            Func<Customer, dynamic> convert = x => new
+                {
+                    CustomerName = x.Name, 
+                    CustomerAddress = x.Address
+                };
 
-            var customer = customerFunc(GetCustomerFromDatabase());
+            var customer = convert(getCustomerFunc());
 
             Console.WriteLine(customer.CustomerName);
             Console.WriteLine(customer.CustomerAddress);

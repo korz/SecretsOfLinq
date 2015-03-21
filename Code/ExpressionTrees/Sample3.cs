@@ -11,10 +11,13 @@ namespace ExpressionTrees
 
             Console.WriteLine(AreTypesEqual(5, 10));
             Console.WriteLine(AreTypesEqual(5, 5m));
+            Console.ReadLine();
         }
 
         private static bool AreTypesEqual<T1, T2>(T1 a, T2 b)
         {
+            //   (a,b) => a.GetType() == b.GetType();
+
             //Parameter Expressions
             var aParameter = Expression.Parameter(typeof(T1), "a");
             var bParameter = Expression.Parameter(typeof(T2), "b");

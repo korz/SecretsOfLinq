@@ -10,19 +10,20 @@ namespace ExpressionTrees
     {
         public static void Sample7()
         {
-            var dictionary = new Dictionary<string, object>
+            var filters = GetCustomerFilterDictionary();
+
+            IList<Func<Customer, bool>> funcs = CreateEqualExpressions<Customer>(filters).ToList();
+
+            ProcessFuncs<Customer>(funcs);
+        }
+
+        private static Dictionary<string, object> GetCustomerFilterDictionary()
+        {
+            return new Dictionary<string, object>
                 {
                     { "Id", 1 },
                     { "Name", "Spencer Group"}
                 };
-
-            IList<Func<Customer, bool>> funcs = CreateEqualExpressions<Customer>(dictionary).ToList();
-
-            //var collection = somecollection;
-            foreach (var func in funcs)
-            {
-                //collection.Where(func);
-            }
         }
 
         private static IEnumerable<Func<T, bool>> CreateEqualExpressions<T>(IDictionary<string, object> dictionary)
@@ -43,6 +44,17 @@ namespace ExpressionTrees
             var equals = Expression.Equal(property, constant);
 
             return Expression.Lambda<Func<T, bool>>(equals, parameter).Compile();
+        }
+
+        private static void ProcessFuncs<T>(IList<Func<Customer, bool>> funcs)
+        {
+            //var collection = somecollection;
+            foreach (var func in funcs)
+            {
+                //collection.Where(func);
+            }
+
+            //return collection.ToList();
         }
     }
 }

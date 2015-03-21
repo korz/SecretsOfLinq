@@ -28,6 +28,14 @@ namespace Funcs
             }
         }
 
+        public static void Test3(IList<Customer> customers)
+        {
+            foreach (var customer in customers)
+            {
+                var otherCustomers = customers.Where(x => x != customer).ToList();
+            }
+        }
+
         private static IList<Customer> GetCustomersFromDatabase()
         {
             var repository = new FakeCustomerRepository();

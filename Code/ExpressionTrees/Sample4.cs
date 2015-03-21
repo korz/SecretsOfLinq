@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq.Expressions;
+using ObjectsAsTrees.Data;
 
 namespace ExpressionTrees
 {
@@ -10,6 +11,10 @@ namespace ExpressionTrees
             //Decompile Existing Expression
 
             Expression<Func<int, bool>> expression = x => x < 5;
+            Func<int, bool> func = x => x < 5;
+            
+            Func<Customer, object> customerFunc = x => x.Name;
+            //"Name"
 
             ParameterExpression parameter =  expression.Parameters[0];
             BinaryExpression operation = (BinaryExpression)expression.Body;
