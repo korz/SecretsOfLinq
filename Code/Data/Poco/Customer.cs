@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ObjectsAsTrees.Data
+namespace Data
 {
     public class Customer
     {

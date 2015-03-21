@@ -41,20 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sample7.cs" />
-    <Compile Include="Sample6.cs" />
-    <Compile Include="Sample5.cs" />
-    <Compile Include="Sample4.cs" />
-    <Compile Include="Sample3.cs" />
-    <Compile Include="Sample2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sample1.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ObjectsAsTrees\ObjectsAsTrees.csproj">
+    <ProjectReference Include="..\Data\Data.csproj">
       <Project>{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}</Project>
-      <Name>ObjectsAsTrees</Name>
+      <Name>Data</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

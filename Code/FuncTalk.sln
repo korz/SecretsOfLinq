@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpressionTrees", "ExpressionTrees\ExpressionTrees.csproj", "{A73541F7-B478-484E-8688-339FC96D1C66}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObjectsAsTrees", "ObjectsAsTrees\ObjectsAsTrees.csproj", "{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{E7DD2F9D-E5AA-4F1E-9A88-03B7A122DED4}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionPrinting", "ActionPrinting\ActionPrinting.csproj", "{2687A1AB-1A51-4915-935A-A0DC0F0C4FAB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funcs", "Funcs\Funcs.csproj", "{A36F8CF9-6567-479B-8C05-4E3A7B52E6EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +25,6 @@ Global
 		{A73541F7-B478-484E-8688-339FC96D1C66}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A73541F7-B478-484E-8688-339FC96D1C66}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A73541F7-B478-484E-8688-339FC96D1C66}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E7DD2F9D-E5AA-4F1E-9A88-03B7A122DED4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{E7DD2F9D-E5AA-4F1E-9A88-03B7A122DED4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7DD2F9D-E5AA-4F1E-9A88-03B7A122DED4}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,6 +41,10 @@ Global
 		{A36F8CF9-6567-479B-8C05-4E3A7B52E6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A36F8CF9-6567-479B-8C05-4E3A7B52E6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A36F8CF9-6567-479B-8C05-4E3A7B52E6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

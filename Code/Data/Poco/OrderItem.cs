@@ -1,4 +1,4 @@
-﻿namespace ObjectsAsTrees.Data
+﻿namespace Data
 {
     public class OrderItem
     {

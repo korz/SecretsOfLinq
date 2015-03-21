@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ObjectsAsTrees.Data
+namespace Data
 {
     public class Address
     {

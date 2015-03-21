@@ -5,10 +5,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{5E7BCCD6-3FEC-422A-9FB1-2F9F2B5B8ECB}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ObjectsAsTrees</RootNamespace>
-    <AssemblyName>ObjectsAsTrees</AssemblyName>
+    <RootNamespace>Data</RootNamespace>
+    <AssemblyName>Data</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -31,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -41,12 +44,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Data\Address.cs" />
-    <Compile Include="Data\Customer.cs" />
-    <Compile Include="Data\FakeCustomerRepository.cs" />
-    <Compile Include="Data\Order.cs" />
-    <Compile Include="Data\OrderItem.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Poco\Address.cs" />
+    <Compile Include="Poco\Customer.cs" />
+    <Compile Include="FakeCustomerRepository.cs" />
+    <Compile Include="Poco\Order.cs" />
+    <Compile Include="Poco\OrderItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
