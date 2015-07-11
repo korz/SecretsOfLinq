@@ -16,8 +16,9 @@ namespace ExpressionTrees
             //Decompile_Expression();
             //Is_Date_Within_Range();
             //Difference_Between_Expression_And_Func();
-            //Create_Func_Filters_From_Dictionary();
+           // Create_Func_Filters_From_Dictionary();
 
+            //Extensions2.Test();
             Console.ReadLine();
         }
 

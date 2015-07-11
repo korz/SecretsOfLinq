@@ -52,7 +52,10 @@ namespace Funcs
             Console.WriteLine(pi2.Invoke());
         }
 
-        static double GetPi() { return Math.PI; }
+        static double GetPi()
+        {
+            return Math.PI;
+        }
         #endregion
 
         #region Sample 2
@@ -73,8 +76,12 @@ namespace Funcs
         {
             //Method Group???
             Func<int, int, int> func1 = (x, y) => Add(x, y);
+            Func<int, int, int> func4 = Add;
 
-            Func<int, int, int> func2 = (x, y) => { return x + y; }; //Anonmyous Method
+            Func<int, int, int> func2 = (x, y) => 
+            { 
+                return x + y;
+            }; //Anonmyous Method
             Func<int, int, int> func3 = (x, y) => x + y;
 
             Console.WriteLine(func1(1, 2));
@@ -86,7 +93,7 @@ namespace Funcs
         #region Sample 4
         public static void Anonymous_Type()
         {
-            Func<dynamic> personFunc = () => new
+            Func<dynamic> personFunc = () =>  new
             {
                 FirstName = "Brian",
                 LastName = "Korzynski"
@@ -102,7 +109,7 @@ namespace Funcs
         public static void Func_As_Converter()
         {
             var repository = new FakeCustomerRepository();
-            var customer = repository.GetCustomer(1);
+            var customer = repository.GetCustomers();
 
             Func<Customer, dynamic> converter = x => new
             {

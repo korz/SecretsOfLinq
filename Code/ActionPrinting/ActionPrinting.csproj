@@ -34,7 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MessagePrinter.cs" />
-    <Compile Include="MessagePrintingActionCreator.cs" />
+    <Compile Include="MessagePrintingActionFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

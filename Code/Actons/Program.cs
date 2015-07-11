@@ -7,10 +7,10 @@ namespace Actions
     {
         public static void Main(string[] args)
         {
-            Simple_Action();
+            //Simple_Action();
             //Action_With_Single_Parameter();
             //Action_With_Multiple_Parameters();
-            //Action_From_Another_Project();
+            Action_From_Another_Project();
 
             Console.ReadLine();
         }
@@ -25,20 +25,15 @@ namespace Actions
         public static void Action_With_Single_Parameter()
         {
             //Different Styles, Same thing
-            Action<string> action1 = (x) => PrintMessage(x);
+            Action<string> action1 = (x) => Console.WriteLine(x);
 
-            Action<string> action2 = x => PrintMessage(x);
+            Action<string> action2 = x => Console.WriteLine(x);
 
-            Action<int> action3 = x => PrintMessage(x.ToString());
+            Action<int> action3 = x => Console.WriteLine(x.ToString());
 
             action1("Hello");
-            action2("GRDevDay");
+            action2("CodeStock");
             action3(DateTime.Today.Year);
-        }
-
-        private static void PrintMessage(string text)
-        {
-            Console.WriteLine(text);
         }
 
         public static void Action_With_Multiple_Parameters()
@@ -54,14 +49,14 @@ namespace Actions
                 Console.WriteLine();
             };
 
-            action("Hello", "GRDevDay", DateTime.Today.Year);
+            action("Hello", "CodeStock", DateTime.Today.Year);
         }
 
         public static void Action_From_Another_Project()
         {
-            var actionCreator = new MessagePrintingActionCreator();
+            var actionCreator = new MessagePrintingActionFactory();
 
-            actionCreator.Print("Hello GRDevDay 2015");
+            actionCreator.Print("Hello CodeStock 2015");
         }
     }
 }
