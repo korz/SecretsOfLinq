@@ -7,10 +7,10 @@ namespace Actions
     {
         public static void Main(string[] args)
         {
-            //Simple_Action();
+            Simple_Action();
             //Action_With_Single_Parameter();
             //Action_With_Multiple_Parameters();
-            Action_From_Another_Project();
+            //Action_From_Another_Project();
 
             Console.ReadLine();
         }
@@ -32,7 +32,7 @@ namespace Actions
             Action<int> action3 = x => Console.WriteLine(x.ToString());
 
             action1("Hello");
-            action2("Dog Food Con");
+            action2("Dev Up");
             action3(DateTime.Today.Year);
         }
 
@@ -49,14 +49,14 @@ namespace Actions
                 Console.WriteLine();
             };
 
-            action("Hello", "Dog Food Con", DateTime.Today.Year);
+            action("Hello", "Dev Up", DateTime.Today.Year);
         }
 
         public static void Action_From_Another_Project()
         {
-            var actionCreator = new MessagePrintingActionFactory();
+            MessagePrintingActionFactory actionCreator = new MessagePrintingActionFactory();
 
-            actionCreator.Print("Hello Dog Food Con 2015");
+            actionCreator.Print("Hello Dev Up 2015");
         }
     }
 }

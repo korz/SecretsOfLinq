@@ -117,7 +117,7 @@ namespace Funcs
                 CustomerAddress = x.Address
             };
 
-            dynamic convertedCustomer = converter(customer);
+            dynamic convertedCustomer = converter(customer.First());
 
             Console.WriteLine(convertedCustomer.CustomerName);
             Console.WriteLine(convertedCustomer.CustomerAddress);
