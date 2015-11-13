@@ -10,13 +10,13 @@ namespace ExpressionTrees
     {
         static void Main(string[] args)
         {
-            Left_Side_Expression_Tree();
+            //Left_Side_Expression_Tree();
             //Full_Expression_Tree();
             //Type_Comparison_Expression_Tree();
             //Decompile_Expression();
             //Is_Date_Within_Range();
             //Difference_Between_Expression_And_Func();
-           // Create_Func_Filters_From_Dictionary();
+            Create_Func_Filters_From_Dictionary();
 
             //Extensions2.Test();
             Console.ReadLine();
@@ -68,7 +68,7 @@ namespace ExpressionTrees
 
             var dynamicCustomer = _converter(customer);
 
-            Console.WriteLine(AreTypesEqual(customer,dynamicCustomer));
+            Console.WriteLine(AreTypesEqual(customer, dynamicCustomer));
         }
 
         private static bool AreTypesEqual<T1, T2>(T1 a, T2 b)

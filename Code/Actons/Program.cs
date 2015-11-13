@@ -32,7 +32,7 @@ namespace Actions
             Action<int> action3 = x => Console.WriteLine(x.ToString());
 
             action1("Hello");
-            action2("CodeStock");
+            action2("Dog Food Con");
             action3(DateTime.Today.Year);
         }
 
@@ -49,14 +49,14 @@ namespace Actions
                 Console.WriteLine();
             };
 
-            action("Hello", "CodeStock", DateTime.Today.Year);
+            action("Hello", "Dog Food Con", DateTime.Today.Year);
         }
 
         public static void Action_From_Another_Project()
         {
             var actionCreator = new MessagePrintingActionFactory();
 
-            actionCreator.Print("Hello CodeStock 2015");
+            actionCreator.Print("Hello Dog Food Con 2015");
         }
     }
 }

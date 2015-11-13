@@ -18,6 +18,12 @@ namespace ExpressionTrees
             return collection;
         }
 
+        public static IEnumerable<T> ApplyWheresAsAggregate<T>(this IEnumerable<T> collection,
+            IList<Func<T, bool>> wheres)
+        {
+            return wheres.Aggregate(collection, (current, @where) => current.Where(@where));
+        }
+
         public static void Test()
         {
             var collection = new int[] { 1, 2, 3, 4, 5 };
